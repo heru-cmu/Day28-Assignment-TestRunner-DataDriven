@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test Suite" parallel="false" verbose="2">
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="saucedemo.LoginTest">
+                <methods>
+                    <include name="testLogin"/>
+                    <include name="testFailedLogin"/>
+                    <include name="testDataDriven"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
