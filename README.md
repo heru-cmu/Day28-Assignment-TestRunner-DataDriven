@@ -14,8 +14,6 @@ Tujuan: membangun framework automation yang modular, maintainable, dan bisa dija
 
 ---
 
-## 📂 Struktur Project
-
 ## 📁 Struktur Project
 
 | Folder/File                  | Deskripsi                                |
