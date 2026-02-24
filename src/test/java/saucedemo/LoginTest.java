@@ -1,7 +1,8 @@
 package saucedemo;
 import Core.BaseTest;
-import Core.DriverManager;
 import Core.TestUtils;
+import Core.DriverManager;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
