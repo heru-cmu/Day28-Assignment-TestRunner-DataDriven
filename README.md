@@ -10,7 +10,7 @@ Framework ini dibangun untuk menguji aplikasi web **SauceDemo** dengan pendekata
 - **WebDriverManager** → otomatis setup driver (Chrome, Firefox, Edge).
 - **Log4j** → logging profesional.
 
-Tujuan: membangun framework automation yang modular, maintainable, dan bisa dijadikan portfolio QA Engineer.
+Tujuan: membangun framework automation yang modular, dan maintainable.
 
 ---
 
