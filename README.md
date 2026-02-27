@@ -14,8 +14,6 @@ Tujuan: membangun framework automation yang modular, maintainable, dan bisa dija
 
 ---
 
-## 📂 Struktur Project
-
 ## 📁 Struktur Project
 
 | Folder/File                  | Deskripsi                                |
@@ -48,24 +46,6 @@ Tujuan: membangun framework automation yang modular, maintainable, dan bisa dija
 - **login-data-test.xlsx** → data driven untuk login test.
 
 ---
-
-## 🚀 Cara Menjalankan
-
-1. Clone repo:
-   ```bash
-   git clone https://github.com/heru-cmu/Day28-Assignment-TestRunner-DataDriven.git
-   cd Day28-Assignment-TestRunner-DataDriven
-2. Jalankan test dengan Gradle:
-    ```bash
-   ./gradlew test
-3. Jalankan suite TestNG:
-    ```bash
-   ./gradlew test -Dsuite=src/test/resources/suites/smoke.xml
-## 📊 Hasil Test
-- Semua test PASS ✅ (8/8).
-- Report tersedia di: 
-`build/reports/tests/test/index.html (default Gradle report).`
-
 ## 🎯 Kesimpulan
 Framework ini membuktikan:
 - Integrasi penuh antara POM, TestNG, Data Driven Testing, dan WebDriverManager.
