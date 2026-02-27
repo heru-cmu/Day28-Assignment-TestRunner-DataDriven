@@ -14,26 +14,6 @@ Tujuan: membangun framework automation yang modular, maintainable, dan bisa dija
 
 ---
 
-## 📂 Struktur Project
-
-## 📁 Struktur Project
-
-| Folder/File                  | Deskripsi                                |
-|------------------------------|------------------------------------------|
-| `build.gradle.kts`           | Gradle build file (Kotlin DSL)           |
-| `src/main/java/Core/BasePage.java` | Abstraksi dasar untuk semua page object |
-| `src/main/java/saucedemo/LoginPage.java` | Page Object untuk login SauceDemo   |
-| `src/test/java/Core/BaseTest.java` | Setup/teardown test lifecycle          |
-| `src/test/java/Core/DriverManager.java` | Setup WebDriver (Chrome, Firefox, Edge) |
-| `src/test/java/Core/ConfigReader.java` | Load konfigurasi environment         |
-| `src/test/java/Core/TestUtils.java` | Helper baca data Excel                 |
-| `src/test/java/saucedemo/LoginTest.java` | Test case login (positive, negative, data driven) |
-| `src/test/resources/config/staging.properties` | Konfigurasi environment (baseUrl, user, password) |
-| `src/test/resources/data/login-data-test.xlsx` | Data driven untuk login test        |
-| `src/test/resources/suites/smoke.xml` | TestNG suite file (group smoke)       |
-
----
-
 ## ⚙️ Penjelasan Tiap File
 
 - **BasePage.java** → induk semua page object, menyediakan driver & wait.
@@ -49,28 +29,35 @@ Tujuan: membangun framework automation yang modular, maintainable, dan bisa dija
 
 ---
 
-## 🚀 Cara Menjalankan
+## 🚀 Macam -macam Cara Menjalankan
 
 1. Clone repo:
    ```bash
    git clone https://github.com/heru-cmu/Day28-Assignment-TestRunner-DataDriven.git
    cd Day28-Assignment-TestRunner-DataDriven
-2. Jalankan test dengan Gradle:
+2. Menjalankan dengan Gradle:
     ```bash
    ./gradlew test
-3. Jalankan suite TestNG:
+- Report default Gradle ada di: `build/reports/tests/test/index.html`
+- Bisa override environment & browser:
     ```bash
-   ./gradlew test -Dsuite=src/test/resources/suites/smoke.xml
+  ./gradlew test -Penv=staging -Pbrowser=chrome
+3. Menjalankan dengan IntelliJ IDEA
+   Ada beberapa opsi:
+    - Klik kanan `smoke.xml` → Run
+    - Run/Debug Configuration  
+      Buat konfigurasi baru:
+      - Test kind = Suite 
+      - Suite file = `src/test/resources/suites/smoke.xml`
+---
 ## 📊 Hasil Test
-- Semua test PASS ✅ (8/8).
-- Report tersedia di: 
-`build/reports/tests/test/index.html (default Gradle report).`
-
+- Semua test PASS ✅ (8/8)
+---
 ## 🎯 Kesimpulan
 Framework ini membuktikan:
 - Integrasi penuh antara POM, TestNG, Data Driven Testing, dan WebDriverManager.
 - Struktur modular, reusable, dan maintainable.
 - Cocok dijadikan portfolio assignment QA Automation.
-
+---
 ## 👨‍💻 Author
 Heru Chairuddin Mukti Utama
